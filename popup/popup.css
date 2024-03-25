@@ -1,0 +1,159 @@
+body {
+  height: 600px;
+  width: 650px;
+  background-color: indianred;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  background-color: whitesmoke;
+  margin: -8px;
+  padding: 5px;
+}
+
+#time {
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
+  font-weight: normal;
+  color: whitesmoke;
+}
+
+#btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#btn-container > button {
+  color: indianred;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-weight: bold;
+  width: 100px;
+  cursor: pointer;
+}
+
+#task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.task-input {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 5px 10px 5px 10px;
+  width: 250px;
+}
+
+.task-delete {
+  outline: none;
+  border: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 4px;
+  color: indianred;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* popup.css */
+.task-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.task-input {
+  flex: 1;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.task-priority {
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.task-due-date {
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.task-delete {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#add-task-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#add-task-container input,
+#add-task-container select {
+  margin-right: 15px;
+  padding: 5px;
+}
+
+#add-task-btn {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* popup.css */
+.subtasks-container {
+  margin-left: 20px;
+}
+
+.subtask-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.subtask-input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.subtask-delete {
+  padding: 5px 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-subtask-btn {
+  margin-left: 20px;
+  padding: 5px 10px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#sort-options {
+  margin-top: 20px;
+}
+
+#sort-select {
+  padding: 5px;
+}

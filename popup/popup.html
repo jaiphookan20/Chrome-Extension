@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="../icon.png" />
+    </div>
+    <h1 id="time">00:00</h1>
+    <div id="btn-container">
+      <button id="start-timer-btn">Start Timer</button>
+      <button id="reset-timer-btn">Reset Timer</button>
+      <button id="add-task-row-btn">Add Task Row</button>
+    </div>
+    <div id="task-container"></div>
+    <div id="add-task-container">
+      <input type="text" id="task-input" placeholder="Enter a task..." />
+      <select id="priority-select">
+        <option value="Standard">Standard</option>
+        <option value="Essential">Essential</option>
+        <option value="Immediate">Immediate</option>
+      </select>
+      <input type="date" id="due-date-input" />
+      <button id="save-task-btn">Save Task</button>
+    </div>
+
+    <div id="sort-options">
+      <label for="sort-select">Sort by:</label>
+      <select id="sort-select">
+        <option value="none">None</option>
+        <option value="priority">Priority</option>
+        <option value="dueDate">Due Date</option>
+      </select>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
